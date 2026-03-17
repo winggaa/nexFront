@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Auth.css';
+import './auth.css';
 
 /**
  * @interface AuthProps

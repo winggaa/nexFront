@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Auth from './Auth';
 import RoomList from './RoomList';
 import ChatRoom from './pages/ChatRoom';
@@ -36,8 +36,8 @@ function App() {
    * @function handleLoginSuccess
    * @description 하위 컴포넌트(Auth)에서 로그인 성공 시 호출되어 전역 인증 상태를 업데이트합니다.
    */
-  const handleLoginSuccess = (token: string, nickname: string) => {
-    setIsLoggedIn(true);
+  const handleLoginSuccess = () => {
+  setIsLoggedIn(true);
   };
 
   /**

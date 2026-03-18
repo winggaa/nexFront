@@ -18,13 +18,4 @@ Vercel을 통해 지속적 통합 및 배포(CI/CD) 환경을 구성하였으며
 - 문제: HTTPS 환경의 프론트엔드에서 HTTP 백엔드 API 호출 시 브라우저 보안 정책에 의해 통신이 차단됨
 - 해결: 백엔드 서버(Oracle Cloud) 앞단에 Nginx를 배치하고 SSL 인증서(Certbot)를 적용하여 프론트-백엔드 간 통신 프로토콜을 HTTPS로 일치시킴
 
-## 4. 로컬 실행 방법
-```bash
-# 패키지 설치
-$ npm install
 
-# 환경 변수 설정 (.env 파일 생성)
-VITE_REACT_APP_API_BASE_URL=[https://nextalk2026.duckdns.org](https://nextalk2026.duckdns.org)
-
-# 개발 서버 실행
-$ npm run dev
